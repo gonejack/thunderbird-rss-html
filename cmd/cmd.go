@@ -93,7 +93,7 @@ func (c *Converter) process(name string) (err error) {
 	}
 	htm = gohtml.Format(htm)
 
-	target := strings.TrimSuffix(name, ".eml") + ".html"
+	target := strings.TrimSuffix(name, ".eml") + ".thunderbird.html"
 	return os.WriteFile(target, []byte(htm), 0766)
 }
 func (c *Converter) patchHTML(eml *email.Email, doc *goquery.Document) {
