@@ -1,5 +1,5 @@
 # thunderbird-rss-html
-This command line tool converts .html to .epub with images fetching.
+This command line converts thuderbird's exported RSS .eml file to .html.
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gonejack/thunderbird-rss-html)
 ![Build](https://github.com/gonejack/thunderbird-rss-html/actions/workflows/go.yml/badge.svg)
