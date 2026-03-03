@@ -62,7 +62,7 @@ func (c *Converter) run() (err error) {
 	for _, eml := range c.EML {
 		err = c.process(eml)
 		if err != nil {
-			err = fmt.Errorf("parse %s failed: %s", eml, err)
+			err = fmt.Errorf("parse %s failed: %w", eml, err)
 			return
 		}
 	}
